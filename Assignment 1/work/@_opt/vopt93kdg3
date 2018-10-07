@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+dH:\My Documents\System Design with HDLs\Tutorial
+T_opt
+VQ6<b::=d8Y0?F2PWa<;QO1
+04 5 9 work clock behaviour 1
+=1-989096c40223-5ba0b848-13a-126c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1b;51
+Eclock
+Z0 w1537259567
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dH:\My Documents\System Design with HDLs\Assignment 1
+Z4 8H:/My Documents/System Design with HDLs/Assignment 1/clock.vhd
+Z5 FH:/My Documents/System Design with HDLs/Assignment 1/clock.vhd
+l0
+L4
+V^MB1XV3^IK;kJoFMzePDe0
+Z6 OL;C;10.1b;51
+32
+Z7 !s108 1537259570.622000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/My Documents/System Design with HDLs/Assignment 1/clock.vhd|
+Z9 !s107 H:/My Documents/System Design with HDLs/Assignment 1/clock.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 CT2BSVIM3d=S`28J5gYLG1
+!i10b 1
+Abehaviour
+R1
+R2
+DEx4 work 5 clock 0 22 ^MB1XV3^IK;kJoFMzePDe0
+l9
+L7
+VShYJ^N_o^ZdUGhUWIW7kA0
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 SWCM=V]5=Y?b9]59<I;lg3
+!i10b 1

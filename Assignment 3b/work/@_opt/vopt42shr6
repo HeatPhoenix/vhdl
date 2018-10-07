@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+dH:\My Documents\System Design with HDLs\Assignment 2
+T_opt
+VI=fN2C>SUGR1LoBHPd3o]2
+04 10 9 work full_adder behaviour 1
+04 10 9 work half_adder behaviour 1
+=1-989096c40223-5ba89bf0-22e-30b8
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1b;51
+Efull_adder
+Z0 w1537776559
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dH:\My Documents\System Design with HDLs\Assignment 3
+Z4 8H:/My Documents/System Design with HDLs/Assignment 3/full_adder.vhd
+Z5 FH:/My Documents/System Design with HDLs/Assignment 3/full_adder.vhd
+l0
+L4
+VjW7BM;6^5jOC0^ge6H6CI3
+Z6 OL;C;10.1b;51
+32
+Z7 !s108 1537776567.389000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/My Documents/System Design with HDLs/Assignment 3/full_adder.vhd|
+Z9 !s107 H:/My Documents/System Design with HDLs/Assignment 3/full_adder.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 `;hACNo3@dNHUGYhzK^kS2
+!i10b 1
+Abehaviour
+R1
+R2
+DEx4 work 10 full_adder 0 22 jW7BM;6^5jOC0^ge6H6CI3
+l14
+L9
+V@SebL6_iLVX0H1f1HnH2f1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 2czGaAjl^`K3gm7Pz:>GE3
+!i10b 1
+Ehalf_adder
+Z12 w1537776565
+R1
+R2
+R3
+Z13 8H:/My Documents/System Design with HDLs/Assignment 3/half_adder.vhd
+Z14 FH:/My Documents/System Design with HDLs/Assignment 3/half_adder.vhd
+l0
+L4
+V=gb_^ol=Vdj`CS5kdYA8n3
+R6
+32
+Z15 !s108 1537776575.190000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|H:/My Documents/System Design with HDLs/Assignment 3/half_adder.vhd|
+Z17 !s107 H:/My Documents/System Design with HDLs/Assignment 3/half_adder.vhd|
+R10
+R11
+!s100 J<hZ7W0NLR4lR[6ES8dSU1
+!i10b 1
+Abehaviour
+R1
+R2
+DEx4 work 10 half_adder 0 22 =gb_^ol=Vdj`CS5kdYA8n3
+l10
+L9
+VeKeGB5<7dCmCABnSZ>L`V0
+!s100 B9dRH<;_?W=L7Hol8:;LK3
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!i10b 1
