@@ -1,0 +1,49 @@
+{D:/School/Master/SDwHDLS/Assignment 4/async_dff.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\School\Master\SDwHDLS\Assignment 4\async_dff.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity async_dff
+-- Compiling architecture behaviour of async_dff
+
+} {} {}} {D:/School/Master/SDwHDLS/Assignment 4/latchedAdder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\School\Master\SDwHDLS\Assignment 4\latchedAdder.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity latched_adder
+-- Compiling architecture behaviour of latched_adder
+
+} {} {}} {D:/School/Master/SDwHDLS/Assignment 4/half_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\School\Master\SDwHDLS\Assignment 4\half_adder.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity half_adder
+-- Compiling architecture behaviour of half_adder
+
+} {} {}} {D:/School/Master/SDwHDLS/Assignment 4/full_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/Assignment 4/full_adder.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity full_adder
+-- Compiling architecture behaviour of full_adder
+
+} {} {}} {D:/School/Master/SDwHDLS/Assignment 4/testbench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\School\Master\SDwHDLS\Assignment 4\testbench.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testbench
+-- Compiling architecture behaviour of testbench
+
+} {} {}} {D:/School/Master/SDwHDLS/Assignment 4/pipelinedMult.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\School\Master\SDwHDLS\Assignment 4\pipelinedMult.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pipelined_mult
+-- Compiling architecture behaviour of pipelined_mult
+
+} {} {}}

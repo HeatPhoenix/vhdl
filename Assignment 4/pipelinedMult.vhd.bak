@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity pipelined_mult is
+  port (A, X: in std_logic_vector(1 downto 0);
+	clk, reset: in std_logic;
+	P: out std_logic_vector(3 downto 0));
+end entity pipelined_mult;
+
+architecture behaviour of pipelined_mult is
+  component latched_adder is
+    port (A, B, C_in, clk, reset: in std_logic; CQ, CoutQ: out std_logic);
+  end component;
+  component async_dff is
+    port (D, clk, reset: in std_logic; Q, Qbar: out std_logic);
+  end component;
+  signal RA1, RA2, RX1, I1, IC1, I2, IC2, F1, FC1, F2, R1, A0X0, A1X0, A1X0, A1X1: std_logic;
+begin
+  REG1: async_dff port map (D=>A(0), clk=>clk, reset=>reset, Q=>RA1);
+  REG2: async_dff port map (D=>A(1), clk=>clk, reset=>reset, Q=>RA2);
+  REG3: async_dff port map (D=>X(1), clk=>clk, reset=>reset, Q=>RX1);
+  A0X0 <= A(0) and X(0);
+  A1X0 <= A(1) and X(0);
+  A0X1 <= RA1 and RX1;
+  A1X1 <= RA2 and RX1;
+  LA1: latched_adder port map (A=>A0X0, B=>'0', C_in=>'0', clk=>clk, reset=>reset, CQ=>I1, CoutQ=>IC1);
+  LA2: latched_adder port map (A=>A1X0, B=>'0', C_in=>'0', clk=>clk, reset=>reset, CQ=>I2, CoutQ=>IC2);
+  LA3: latched_adder port map (A=>A0X1, B=>IC1, C_in=>I2, clk=>clk, reset=>reset, CQ=>F1, CoutQ=>FC1);
+  LA4: latched_adder port map (A=>A1X1, B=>IC2, C_in=>'0', clk=>clk, reset=>reset, CQ=>F2);
+  REG4: async_dff port map (D=>I1, clk=>clk, reset=>reset, Q=>R1);
+  REG5: async_dff port map (D=>R1, clk=>clk, reset=>reset, Q=>P(0));
+  REG6: async_dff port map (D=>F1, clk=>clk, reset=>reset, Q=>P(1));
+  LA5: latched_adder port map (A=>FC1, B=>F2, C_in=>'0', clk=>clk, reset=>reset, CQ=>P(2), CoutQ=>P(3));
+end behaviour;

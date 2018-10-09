@@ -1,0 +1,205 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dc:/program files (x86)/modelsim/examples
+Easync_dff
+Z0 w1537262410
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/School/Master/SDwHDLS/Assignment 3b
+Z4 8D:/School/Master/SDwHDLS/Assignment 3b/async_dff.vhd
+Z5 FD:/School/Master/SDwHDLS/Assignment 3b/async_dff.vhd
+l0
+L4
+V9NgVVQ`@6;:<0d39]F<Q43
+!s100 2GZdnTP5;j0OM[08<89@81
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1538984313
+!i10b 1
+Z8 !s108 1538984313.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/Assignment 3b/async_dff.vhd|
+Z10 !s107 D:/School/Master/SDwHDLS/Assignment 3b/async_dff.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Abehaviour
+R1
+R2
+DEx4 work 9 async_dff 0 22 9NgVVQ`@6;:<0d39]F<Q43
+l10
+L9
+V5T4?SEieTz]eZZ:JfGhnR2
+!s100 RNamfEOgkmiW`UEGR:9?`3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efull_adder
+Z13 w1537776559
+R1
+R2
+R3
+Z14 8D:/School/Master/SDwHDLS/Assignment 3b/full_adder.vhd
+Z15 FD:/School/Master/SDwHDLS/Assignment 3b/full_adder.vhd
+l0
+L4
+VAdfW1k6kGG0Jg<nM=dCM^3
+!s100 j:61m7IL4QcJ21TU1c[_<3
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/Assignment 3b/full_adder.vhd|
+Z17 !s107 D:/School/Master/SDwHDLS/Assignment 3b/full_adder.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+DEx4 work 10 full_adder 0 22 AdfW1k6kGG0Jg<nM=dCM^3
+l14
+L9
+V`z`QBWzb4>zzG`;PzMO?[2
+!s100 MTm6?aT4_9gm`mFg:cL9W3
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ehalf_adder
+Z18 w1537776565
+R1
+R2
+R3
+Z19 8D:/School/Master/SDwHDLS/Assignment 3b/half_adder.vhd
+Z20 FD:/School/Master/SDwHDLS/Assignment 3b/half_adder.vhd
+l0
+L4
+V:`HB4HTajklF`A4MOk^ZF1
+!s100 g2HXf[NBf4<I>7aUDbe>22
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/Assignment 3b/half_adder.vhd|
+Z22 !s107 D:/School/Master/SDwHDLS/Assignment 3b/half_adder.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+DEx4 work 10 half_adder 0 22 :`HB4HTajklF`A4MOk^ZF1
+l10
+L9
+VUBQXofWYQ6ZYV5]2YdjZJ3
+!s100 Q5OdcI?`mWoEHlbb0VgaC1
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Elatched_adder
+Z23 w1538984674
+R1
+R2
+R3
+Z24 8D:/School/Master/SDwHDLS/Assignment 3b/latchedAdder.vhd
+Z25 FD:/School/Master/SDwHDLS/Assignment 3b/latchedAdder.vhd
+l0
+L4
+V=^U4e7<nNH:>z4^oH_Sae0
+!s100 hE0T5FoQ3Uienh_ELf`Wa3
+R6
+32
+Z26 !s110 1538984678
+!i10b 1
+Z27 !s108 1538984678.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/Assignment 3b/latchedAdder.vhd|
+Z29 !s107 D:/School/Master/SDwHDLS/Assignment 3b/latchedAdder.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+DEx4 work 13 latched_adder 0 22 =^U4e7<nNH:>z4^oH_Sae0
+l17
+L9
+VGEQCSVXi3;MhlV>HKakK]0
+!s100 e?d3Oi7Szaa^]nkX?5]eb3
+R6
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R11
+R12
+Etestbench
+Z30 w1538984815
+R1
+R2
+R3
+Z31 8D:/School/Master/SDwHDLS/Assignment 3b/testbench.vhd
+Z32 FD:/School/Master/SDwHDLS/Assignment 3b/testbench.vhd
+l0
+L4
+Ve=aO;Yi^=oXRE?_>279j52
+!s100 NaNUGQOUoO6LLI=3hH9@h2
+R6
+32
+Z33 !s110 1538984820
+!i10b 1
+Z34 !s108 1538984820.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/Assignment 3b/testbench.vhd|
+Z36 !s107 D:/School/Master/SDwHDLS/Assignment 3b/testbench.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R1
+R2
+Z37 DEx4 work 9 testbench 0 22 e=aO;Yi^=oXRE?_>279j52
+l12
+L7
+VK=4iIcKBfHGS:KLM<OQFl1
+!s100 Til7><Q?hFVJ:iiifoL0T1
+R6
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R11
+R12

@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity testbench is
+end entity testbench;
+
+architecture behaviour of testbench is
+  component full_adder is
+    port (A, B, C_in: in std_logic; C, C_out: out std_logic);
+  end component;
+  signal A, B, C_in, C, C_out : std_logic;
+begin
+  FA1: full_adder port map (A=>A, B=>B, C_in=>C_in, C=>C, C_out=>C_out);
+  A <= not A after 20 ns;
+  B <= not B after 10 ns;
+  C_in <= not C_in after 5 ns;
+end behaviour;

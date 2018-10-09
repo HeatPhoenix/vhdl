@@ -16,3 +16,5 @@ begin
   HA2: half_adder port map (A=>S1, B=>C_in, C=>C, C_out=>S3);
   C_out <= S2 or S3;
 end behaviour;
+
+
