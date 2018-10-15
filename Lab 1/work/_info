@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/School/Master/SDwHDLS/Assignment 4
+Ealu
+w1539583718
+DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+dD:/School/Master/SDwHDLS/vhdl
+8D:/School/Master/SDwHDLS/vhdl/alu.vhd
+FD:/School/Master/SDwHDLS/vhdl/alu.vhd
+l0
+L4
+VjR`]DXFB`FF@KL<^5l?381
+!s100 jWZ3I84lbbD_>d^Y?JiJm0
+OP;C;10.4a;61
+32
+!s110 1539583721
+!i10b 1
+!s108 1539583721.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/alu.vhd|
+!s107 D:/School/Master/SDwHDLS/vhdl/alu.vhd|
+!i113 1
+o-work work -2002 -explicit -O0
+tExplicit 1

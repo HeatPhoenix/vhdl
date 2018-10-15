@@ -1,0 +1,32 @@
+D:/School/Master/SDwHDLS/vhdl/registers.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/School/Master/SDwHDLS/vhdl/registers.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+** Error (suppressible): D:/School/Master/SDwHDLS/vhdl/registers.vhd(2): (vcom-1491) Empty source files.
+
+
+} {} {}} D:/School/Master/SDwHDLS/vhdl/memory.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/School/Master/SDwHDLS/vhdl/memory.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+** Error (suppressible): D:/School/Master/SDwHDLS/vhdl/memory.vhd(2): (vcom-1491) Empty source files.
+
+
+} {} {}} D:/School/Master/SDwHDLS/vhdl/alu.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/School/Master/SDwHDLS/vhdl/alu.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package MATH_REAL
+-- Compiling entity alu
+-- Compiling architecture behaviour of alu
+** Error: D:/School/Master/SDwHDLS/vhdl/alu.vhd(15): No feasible entries for infix operator "*".
+** Error: D:/School/Master/SDwHDLS/vhdl/alu.vhd(15): Bad expression in right operand of infix expression "+".
+** Error: D:/School/Master/SDwHDLS/vhdl/alu.vhd(15): Bad right hand side (infix expression) in variable assignment.
+** Error: D:/School/Master/SDwHDLS/vhdl/alu.vhd(24): (vcom-1136) Unknown identifier "to_vector".
+
+** Error: D:/School/Master/SDwHDLS/vhdl/alu.vhd(25): VHDL Compiler exiting
+
+} {7.0 11.0 12.0 13.0} {}} D:/School/Master/SDwHDLS/vhdl/scheduler.vhd {0 {vcom -work work -2002 -explicit -stats=none D:/School/Master/SDwHDLS/vhdl/scheduler.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+** Error (suppressible): D:/School/Master/SDwHDLS/vhdl/scheduler.vhd(2): (vcom-1491) Empty source files.
+
+
+} {} {}}
