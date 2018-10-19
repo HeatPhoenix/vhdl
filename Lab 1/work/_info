@@ -7,24 +7,97 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/School/Master/SDwHDLS/Assignment 4
+Z0 dD:/School/Master/SDwHDLS/vhdl/Lab 1
 Ealu
-w1539583718
-DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
-dD:/School/Master/SDwHDLS/vhdl
-8D:/School/Master/SDwHDLS/vhdl/alu.vhd
-FD:/School/Master/SDwHDLS/vhdl/alu.vhd
+w1539947187
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 11 numeric_bit 0 22 d<O?S;AIQfOzoHU3FDK]23
+R0
+8D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd
+FD:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd
 l0
 L4
-VjR`]DXFB`FF@KL<^5l?381
-!s100 jWZ3I84lbbD_>d^Y?JiJm0
-OP;C;10.4a;61
+V<TinnHg11UDRTc[@E=^Nz2
+!s100 :LIJ[=D@UE>2fIWhMh2nh2
+Z1 OP;C;10.4a;61
 32
-!s110 1539583721
+Z2 !s110 1539947192
 !i10b 1
-!s108 1539583721.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/alu.vhd|
-!s107 D:/School/Master/SDwHDLS/vhdl/alu.vhd|
+Z3 !s108 1539947192.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd|
+!s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd|
 !i113 1
-o-work work -2002 -explicit -O0
-tExplicit 1
+Z4 o-work work -2002 -explicit -O0
+Z5 tExplicit 1
+Ememory
+Z6 w1539937415
+Z7 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R0
+Z8 8D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd
+Z9 FD:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd
+l0
+L4
+VI7;^]K]dH^If;O;Q1]74g1
+!s100 8X>4[IbIRA3:df`[ZK?QV2
+R1
+32
+R2
+!i10b 1
+R3
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd|
+Z11 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd|
+!i113 1
+R4
+R5
+Abehaviour
+R7
+DEx4 work 6 memory 0 22 I7;^]K]dH^If;O;Q1]74g1
+l25
+L11
+VMg8XLOiO0AJSLSJza@mQW2
+!s100 7@9Be:4H`j@WNIm<XEUZF0
+R1
+32
+R2
+!i10b 1
+R3
+R10
+R11
+!i113 1
+R4
+R5
+Etestbench
+Z12 w1539946649
+R0
+Z13 8D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd
+Z14 FD:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd
+l0
+L3
+VOCD4i=@Rd58W3IEj=@[Le0
+!s100 lmM8<E@V8SoeT`QTS1oiP1
+R1
+32
+R2
+!i10b 1
+R3
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd|
+Z16 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd|
+!i113 1
+R4
+R5
+Abehaviour
+Z17 DEx4 work 9 testbench 0 22 OCD4i=@Rd58W3IEj=@[Le0
+l20
+L6
+Z18 VhN^N:DgJFAlbYAOAoRWkS1
+Z19 !s100 ze8P[KLNn1En88UT>?ZHg3
+R1
+32
+R2
+!i10b 1
+R3
+R15
+R16
+!i113 1
+R4
+R5

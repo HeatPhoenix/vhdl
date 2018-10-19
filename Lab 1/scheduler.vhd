@@ -1,10 +1,10 @@
 library ieee;
 
-entity memory is
+entity scheduler is
   port (clk: in bit;
 	-- TODO is this one single 16 bit_vector value or four 4 bit_vector values?
 	op, F1, F2, F3: in bit_vector(3 downto 0););
-end entity memory;
+end entity scheduler;
 
 architecture behaviour of scheduler is
   signal imm: bit_vector(7 downto 0);
