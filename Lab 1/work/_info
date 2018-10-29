@@ -9,150 +9,189 @@ z2
 cModel Technology
 Z0 dD:/School/Master/SDwHDLS/vhdl/Lab 1
 Ealu
-w1539947187
-DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-DPx4 ieee 11 numeric_bit 0 22 d<O?S;AIQfOzoHU3FDK]23
+Z1 w1540808882
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 11 numeric_bit 0 22 d<O?S;AIQfOzoHU3FDK]23
 R0
-8D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd
-FD:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd
+Z6 8D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd
+Z7 FD:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd
 l0
-L4
-V<TinnHg11UDRTc[@E=^Nz2
-!s100 :LIJ[=D@UE>2fIWhMh2nh2
-Z1 OP;C;10.4a;61
+L6
+V^6N:;_J0bE[?Sj8lUO49N0
+!s100 NQ;DjoMBQP>`Eg?fMdIFm1
+Z8 OP;C;10.4a;61
 32
-Z2 !s110 1540197286
+Z9 !s110 1540808895
 !i10b 1
-Z3 !s108 1540197286.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd|
-!s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd|
+Z10 !s108 1540808895.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd|
+Z12 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd|
 !i113 1
-Z4 o-work work -2002 -explicit -O0
-Z5 tExplicit 1
-Ememory
-Z6 w1540195459
-Z7 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
-R0
-Z8 8D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd
-Z9 FD:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd
-l0
-L4
-VamLg0P5Bg7Ke>zWj`]bB22
-!s100 k]E4z5f?TLS4ZnCc`hCf>1
-R1
-32
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+Abehaviour
 R2
-!i10b 1
 R3
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd|
-Z11 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd|
-!i113 1
 R4
 R5
-Abehaviour
-R7
-DEx4 work 6 memory 0 22 amLg0P5Bg7Ke>zWj`]bB22
-l25
-L11
-VM17EB^HQm4=IoAzVgnBI;2
-!s100 gRAl7mje5I>Y8_]8DiLi?2
-R1
+DEx4 work 3 alu 0 22 ^6N:;_J0bE[?Sj8lUO49N0
+l38
+L12
+VCNE3A7aROf>4R0;CO9;i92
+!s100 5N9DWIOE]7`Ok1ce6TMYO2
+R8
 32
-R2
+R9
 !i10b 1
-R3
 R10
 R11
+R12
 !i113 1
-R4
-R5
-Eregisters
-w1540197134
-R7
+R13
+R14
+Ememory
+Z15 w1540805642
+Z16 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R0
-8D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd
-FD:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd
+Z17 8D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd
+Z18 FD:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd
 l0
 L4
-VIm`im718WWDZ<M3[iW3_n1
-!s100 ^00aCcoDUYgFA:RjfahF`0
-R1
+Vg_KaLGF=351j1I9@=X7o73
+!s100 eZTTiaISaIEndh0Ol[]zZ0
+R8
 32
-R2
+R9
 !i10b 1
-R3
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd|
-!s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd|
+R10
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd|
+Z20 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/memory.vhd|
 !i113 1
-R4
-R5
-Escheduler
-Z12 w1540196334
+R13
+R14
+Abehaviour
+R16
+DEx4 work 6 memory 0 22 g_KaLGF=351j1I9@=X7o73
+l25
+L11
+VcH195N6=H_@aJ]j]IVB5Q0
+!s100 fiI]]I2lC_IW=AMP1nIDV1
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Eregisters
+Z21 w1540805647
+R16
 R0
-Z13 8D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd
-Z14 FD:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd
+Z22 8D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd
+Z23 FD:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd
+l0
+L4
+Vckb7mzgek>`a^RjBMTG8E2
+!s100 c@Qz6bnP4D3ecQgUOJ2Go2
+R8
+32
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd|
+Z25 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd|
+!i113 1
+R13
+R14
+Abehaviour
+R16
+DEx4 work 9 registers 0 22 ckb7mzgek>`a^RjBMTG8E2
+l25
+L11
+VM;8bVFEc<^;KokS`Q_]5^1
+!s100 SgfNC3hnEdK^dUh7U1AIl2
+R8
+32
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Escheduler
+Z26 w1540806203
+R0
+Z27 8D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd
+Z28 FD:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd
 l0
 L9
 VZD4WW0`4@ofYRbiQUZUhi1
 !s100 EMQkZ9`_CO6XcP4g[AzYY0
-R1
+R8
 32
-R2
+R9
 !i10b 1
-R3
-Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd|
-Z16 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd|
+R10
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd|
+Z30 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd|
 !i113 1
-R4
-R5
+R13
+R14
 Abehaviour
 DEx4 work 9 scheduler 0 22 ZD4WW0`4@ofYRbiQUZUhi1
-l26
+l36
 L15
-VUhlGKHnPhO5D47[=QjM@03
-!s100 _V><_jAFjOdR8J^5N4LmC3
-R1
+VhTaNcea@0WHaH1bZBdfDY0
+!s100 F[o2A^WfObIb]<A0D6Jzb2
+R8
 32
-R2
+R9
 !i10b 1
-R3
-R15
-R16
+R10
+R29
+R30
 !i113 1
-R4
-R5
+R13
+R14
 Etestbench
-Z17 w1540196923
+Z31 w1540807167
 R0
-Z18 8D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd
-Z19 FD:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd
+Z32 8D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd
+Z33 FD:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd
 l0
 L3
 VOCD4i=@Rd58W3IEj=@[Le0
 !s100 lmM8<E@V8SoeT`QTS1oiP1
-R1
+R8
 32
-R2
+Z34 !s110 1540808896
 !i10b 1
-R3
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd|
-Z21 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd|
+Z35 !s108 1540808896.000000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd|
+Z37 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd|
 !i113 1
-R4
-R5
+R13
+R14
 Abehaviour
-Z22 DEx4 work 9 testbench 0 22 OCD4i=@Rd58W3IEj=@[Le0
+Z38 DEx4 work 9 testbench 0 22 OCD4i=@Rd58W3IEj=@[Le0
 l20
 L6
-V13z218kjDeRmgm5B4M3mi2
-!s100 CZ?1KhzWlJ5R^HHm2PH7R3
-R1
+Z39 VO_lOEX:=;YCAjcB`Hkm@g1
+Z40 !s100 dkPRga0F4IHeMF^ER[jU:0
+R8
 32
-R2
+R34
 !i10b 1
-R3
-R20
-R21
+R35
+R36
+R37
 !i113 1
-R4
-R5
+R13
+R14

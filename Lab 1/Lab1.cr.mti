@@ -5,26 +5,33 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity memory
 -- Compiling architecture behaviour of memory
 
-} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd}
+} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package NUMERIC_BIT
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
 -- Compiling entity alu
 -- Compiling architecture behaviour of alu
-** Error: D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd(30): No feasible entries for subprogram "TO_UNSIGNED".
-** Error: D:/School/Master/SDwHDLS/vhdl/Lab 1/alu.vhd(33): VHDL Compiler exiting
 
-} {8.0 10.0} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd}
+} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Compiling entity scheduler
 -- Compiling architecture behaviour of scheduler
 
-} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd}
+} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
-** Error (suppressible): D:/School/Master/SDwHDLS/vhdl/Lab 1/registers.vhd(2): (vcom-1491) Empty source files.
+-- Loading package MATH_REAL
+-- Compiling entity registers
+-- Compiling architecture behaviour of registers
 
+} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Compiling entity testbench
+-- Compiling architecture behaviour of testbench
 
 } {} {}}
