@@ -116,7 +116,7 @@ begin
 		end generate last_and;
 	end generate sumloop;
 	latchloop: for j in 0 to 30 generate
-  	begin -- something goes wrong here, check FA of level 4 or 5 input in simulation
+  	begin -- After further inspection, does it: ????? something goes wrong here, check FA of level 4 or 5 input in simulation
 		input_latch : if(i = 0) generate
 		begin
 			input_dff: async_dff port map (D=>X(j + 1), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
@@ -125,14 +125,15 @@ begin
 		begin
 			input_dff: async_dff port map (D=>inter_loop_sum_out(i - 1)(0), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
 		end generate sum_latch;
-		intermediate_latch : if(i > 0 and j > i) generate
+		intermediate_input_latch : if(i > 0 and j > i) generate
 		begin
 			input_dff: async_dff port map (D=>dff_array(i - 1)(j), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
-		end generate intermediate_latch;
+		end generate intermediate_input_latch;
 		intermediate_sum_latch : if(i > 0 and j > 0 and j <= i) generate
 		begin
 			input_dff: async_dff port map (D=>dff_array(i - 1)(j - 1), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
 		end generate intermediate_sum_latch;
 	end generate latchloop;
   end generate outerloop;
+  -- Start defining last sums and latches to compute that sum.
 end behaviour;
