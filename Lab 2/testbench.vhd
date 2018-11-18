@@ -8,10 +8,11 @@ architecture behaviour of testbench is
   component pipelined_mult is
   	port (A, X: in std_logic_vector(31 downto 0);
 		clk, reset: in std_logic;
-		P: out std_logic_vector(31 downto 0));
+		P: out std_logic_vector(63 downto 0));
   end component;
   signal clk, reset: std_logic;
-  signal A, X, P: std_logic_vector(31 downto 0);
+  signal A, X: std_logic_vector(31 downto 0);
+  signal P: std_logic_vector(63 downto 0);
 begin
   clk_process: process
   begin
