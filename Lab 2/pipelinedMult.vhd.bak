@@ -14,11 +14,12 @@ architecture behaviour of pipelined_mult is
   component async_dff is
     port (D, clk, reset: in std_logic; Q, Qbar: out std_logic);
   end component;
+  component full_adder is
+    port (A, B, C_in: in std_logic; C, C_out: out std_logic);
+  end component;
   signal inter_add : std_logic;
   type intermediate_signals is array (0 to 31) of std_logic_vector(31 downto 0);
-  type intermediate_dff_signals is array (0 to 31) of std_logic_vector(30 downto 0);
-  signal inter_loop_latch, inter_loop_sum_out, inter_loop_carry_out, ripple_intermediate_signals: intermediate_signals;
-  signal dff_array : intermediate_dff_signals;
+  signal input_array, sum_array, inter_loop_latch, inter_loop_sum_out, inter_loop_carry_out, ripple_intermediate_signals, ripple_input_sum_signals, ripple_output_sum_signals, ripple_input_carry_signals, ripple_output_carry_signals: intermediate_signals;
 begin
   outerloop : for i in 0 to 31 generate
   begin
@@ -59,7 +60,7 @@ begin
   		begin
 			fa: latched_adder port map(
 				A=>inter_loop_latch(i-1)(j),
-				And_in=>dff_array(i-1)(i-1),
+				And_in=>input_array(i-1)(i),
 				B=>inter_loop_carry_out(i-1)(j),
 				C_in=>inter_loop_sum_out(i-1)(j + 1),
 				clk=>clk,
@@ -74,7 +75,7 @@ begin
   		begin
 			fa: latched_adder port map(
 				A=>inter_loop_latch(i-1)(j),
-				And_in=>dff_array(i-1)(i-1),
+				And_in=>input_array(i-1)(i),
 				B=>inter_loop_carry_out(i-1)(j),
 				C_in=>'0',
 				clk=>clk,
@@ -89,7 +90,7 @@ begin
   		begin
 			fa: latched_adder port map(
 				A=>inter_loop_latch(i-1)(j),
-				And_in=>dff_array(i-1)(i-1),
+				And_in=>input_array(i-1)(i),
 				B=>inter_loop_carry_out(i-1)(j),
 				C_in=>inter_loop_sum_out(i-1)(j + 1),
 				clk=>clk,
@@ -104,7 +105,7 @@ begin
   		begin
 			fa: latched_adder port map(
 				A=>inter_loop_latch(i-1)(j),
-				And_in=>dff_array(i-1)(i-1),
+				And_in=>input_array(i-1)(i),
 				B=>inter_loop_carry_out(i-1)(j),
 				C_in=>'0',
 				clk=>clk,
@@ -115,43 +116,97 @@ begin
 			);
 		end generate last_and;
 	end generate sumloop;
-	latchloop: for j in 0 to 30 generate
-  	begin -- After further inspection, does it: ????? something goes wrong here, check FA of level 4 or 5 input in simulation
-		input_latch : if(i = 0) generate
+	latchloop: for j in 0 to 31 generate
+  	begin
+		input_latch : if(i = 0 and j > 0) generate
 		begin
-			input_dff: async_dff port map (D=>X(j + 1), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
+			input_dff: async_dff port map (D=>X(j), clk=>clk, reset=>reset, Q=>input_array(i)(j));
 		end generate input_latch;
-		sum_latch : if(i > 0 and j = 0) generate
+		sum_latch : if(i > 0 and j = i) generate
 		begin
-			input_dff: async_dff port map (D=>inter_loop_sum_out(i - 1)(0), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
+			input_dff: async_dff port map (D=>inter_loop_sum_out(i - 1)(0), clk=>clk, reset=>reset, Q=>sum_array(i)(j-1));
 		end generate sum_latch;
-		intermediate_input_latch : if(i > 0 and j > i) generate
+		intermediate_input_latch : if(i > 0 and j >= i) generate
 		begin
-			input_dff: async_dff port map (D=>dff_array(i - 1)(j), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
+			input_dff: async_dff port map (D=>input_array(i - 1)(j), clk=>clk, reset=>reset, Q=>input_array(i)(j));
 		end generate intermediate_input_latch;
-		intermediate_sum_latch : if(i > 0 and j > 0 and j <= i) generate
+		intermediate_sum_latch : if(i > 0 and j > 0 and j < i) generate
 		begin
-			input_dff: async_dff port map (D=>dff_array(i - 1)(j - 1), clk=>clk, reset=>reset, Q=>dff_array(i)(j));
+			input_dff: async_dff port map (D=>sum_array(i - 1)(j-1), clk=>clk, reset=>reset, Q=>sum_array(i)(j-1));
 		end generate intermediate_sum_latch;
 	end generate latchloop;
   end generate outerloop;
-  ripple_outer_loop : for i in 0 to 30 generate
+  ripple_outer_loop : for i in 0 to 31 generate
   begin
 	ripple_latch_loop : for j in 0 to 31 generate
         begin		
+		-- result latch
 		ripple_input_latch : if(i=0 and j < 31) generate
-			ripple_dff: async_dff port map (D=>dff_array(31)(30-j), clk=>clk, reset=>reset, Q=>ripple_intermediate_signals(i)(j));
+			ripple_dff: async_dff port map (D=>sum_array(31)(j), clk=>clk, reset=>reset, Q=>ripple_intermediate_signals(i)(j));
 		end generate ripple_input_latch;
+		-- intermediate result sum latch
 		ripple_input_sum_latch : if(i=0 and j = 31) generate
 			ripple_dff: async_dff port map (D=>inter_loop_sum_out(31)(0), clk=>clk, reset=>reset, Q=>ripple_intermediate_signals(i)(j));
 		end generate ripple_input_sum_latch;	
-		ripple_intermediate_latch : if(i > 0 and i < 30) generate
+		-- intermediate result latch
+		ripple_intermediate_latch : if(i > 0 and i < 31) generate
 			ripple_dff: async_dff port map (D=>ripple_intermediate_signals(i-1)(j), clk=>clk, reset=>reset, Q=>ripple_intermediate_signals(i)(j));
 		end generate ripple_intermediate_latch;
-		ripple_output_latch : if(i = 30) generate
+		-- final result latch
+		ripple_output_latch : if(i = 31) generate
 			ripple_dff: async_dff port map (D=>ripple_intermediate_signals(i-1)(j), clk=>clk, reset=>reset, Q=>P(j));
 		end generate ripple_output_latch;
 	end generate ripple_latch_loop;
+	ripple_input_loop : for j in 0 to 31 generate
+	begin
+		-- input sum latches
+		ripple_input_sum_latch : if(i = 0 and j > i + 1) generate
+			sum_dff: async_dff port map (D=>inter_loop_sum_out(31)(j), clk=>clk, reset=>reset, Q=>ripple_input_sum_signals(i)(j));
+		end generate ripple_input_sum_latch;
+		-- input carry latches
+		ripple_input_carry_latch : if(i = 0 and j > i) generate
+			carry_dff: async_dff port map (D=>inter_loop_carry_out(31)(j), clk=>clk, reset=>reset, Q=>ripple_input_carry_signals(i)(j));
+		end generate ripple_input_carry_latch;
+		-- intermediate sum latches
+		ripple_intermediate_sum_latch : if(i > 0 and i < 31 and j >= i + 1) generate
+			sum_dff: async_dff port map (D=>ripple_input_sum_signals(i-1)(j), clk=>clk, reset=>reset, Q=>ripple_input_sum_signals(i)(j));
+		end generate ripple_intermediate_sum_latch;
+		-- intermediate carry latches
+		ripple_intermediate_carry_latch : if(i > 0 and i < 31 and j > i and j <= 31) generate
+			carry_dff: async_dff port map (D=>ripple_input_carry_signals(i-1)(j), clk=>clk, reset=>reset, Q=>ripple_input_carry_signals(i)(j));
+		end generate ripple_intermediate_carry_latch;
+	end generate ripple_input_loop;
+	ripple_adder_loop : for j in 0 to 31 generate
+        begin
+		-- input adder
+		ripple_input_adder : if(i = 0 and j = 0) generate
+  			for fa: latched_adder use entity WORK.latched_adder(behaviour);
+		begin
+			fa: latched_adder port map (A=>inter_loop_sum_out(31)(1), And_in=>'0', B=>inter_loop_carry_out(31)(0), C_in=>'1', clk=>clk, reset=>reset, CQ=>ripple_output_sum_signals(i)(j), CoutQ=>ripple_output_carry_signals(i)(j));
+		end generate ripple_input_adder;
+		-- intermediate adders
+		ripple_intermediate_adder : if(i > 0 and i < 31 and j = i) generate
+  			for fa: latched_adder use entity WORK.latched_adder(behaviour);
+		begin
+			fa: latched_adder port map (A=>ripple_input_sum_signals(i-1)(j + 1), And_in=>'0', B=>ripple_input_carry_signals(i-1)(j), C_in=>ripple_output_carry_signals(i-1)(j-1) , clk=>clk, reset=>reset, CQ=>ripple_output_sum_signals(i)(j), CoutQ=>ripple_output_carry_signals(i)(j));
+		end generate ripple_intermediate_adder;
+		-- result adder
+		ripple_intermediate_result_adder : if(i = 31 and j = i) generate
+  			for fa: latched_adder use entity WORK.latched_adder(behaviour);
+		begin
+			fa: latched_adder port map (A=>ripple_input_carry_signals(i-1)(j), And_in=>'0', B=>ripple_output_carry_signals(i-1)(j-1), C_in=>'1', clk=>clk, reset=>reset, CQ=>P(32+j), CoutQ=>ripple_output_carry_signals(i)(j));
+		end generate ripple_intermediate_result_adder;
+	end generate ripple_adder_loop;
+	ripple_result_loop : for j in 0 to 31 generate
+        begin
+		-- intermediate result latches
+		ripple_intermediate_result_sum_latch : if(i > 0 and i < 31 and j < i) generate
+			result_dff: async_dff port map (D=>ripple_output_sum_signals(i-1)(j), clk=>clk, reset=>reset, Q=>ripple_output_sum_signals(i)(j));
+		end generate ripple_intermediate_result_sum_latch;
+		-- result latches
+		ripple_intermediate_result_latch : if(i = 31 and j < i) generate
+			result_dff: async_dff port map (D=>ripple_output_sum_signals(i-1)(j), clk=>clk, reset=>reset, Q=>P(31 + j));
+		end generate ripple_intermediate_result_latch;
+	end generate ripple_result_loop;
   end generate ripple_outer_loop;
-  -- Start defining last sums and latches to compute that sum.
 end behaviour;
