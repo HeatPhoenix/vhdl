@@ -58,7 +58,7 @@ begin
     F1 <= "1000";
     wait for 10 ns;
     F1 <= "1001";
-    wait for 10 ns;
+    wait for 10 ns; -- 100ns
     F1 <= "1010";
     wait for 10 ns;
     F1 <= "1011";
@@ -82,7 +82,7 @@ begin
     wait for 10 ns;
     F1 <= "0010";-- store mem 4 to reg 2
     F2 <= "0100";
-    wait for 10 ns;
+    wait for 10 ns; -- 200 ns
     op <= "0010";
     F1 <= "0010";-- store reg 2 to mem 0
     F2 <= "0000";
@@ -92,6 +92,25 @@ begin
     F2 <= "0010";
     F3 <= "0100";
     wait for 10 ns;
+    op <= "0010";
+    F1 <= "0010";-- store reg 7 to mem 15
+    F2 <= "1111";
+    wait for 300 ns;
+    op <= "0000"; -- store imm 11 to mem 0
+    F1 <= "0000";
+    F2 <= "0000";
+    F3 <= "1011";
+    wait for 10 ns;
+    op <= "0001"; -- load mem 0 to register 8
+    F1 <= "1000";
+    F2 <= "0000";
+    F3 <= "0000";
+    wait for 10 ns; -- 250ns
+    op <= "0011"; -- add mem 8 to mem 7 -> mem 9
+    F1 <= "1001";
+    F2 <= "1000";
+    F3 <= "0111";
+    wait for 1000 ns;
   end process;
   S1: scheduler port map(clk=>clk, op=>op, F1=>F1, F2=>F2, F3=>F3);
   --M1: memory port map(store=>store, clk=>clk, loc=>F1, imm=>imm);

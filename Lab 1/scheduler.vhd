@@ -33,6 +33,7 @@ architecture behaviour of scheduler is
   signal imm, mem_out, alu_out, reg_input, reg_out_d, reg_out_s, reg_out_t: bit_vector(7 downto 0);
   signal mem_loc, reg_d_loc, reg_s_loc, reg_t_loc: bit_vector(3 downto 0);
   signal mem_store, mem_store_reg, mem_en, reg_store, reg_load, reg_en, alu_en: bit;
+  signal op_latch, f1_latch, f2_latch, f3_latch: bit_vector(3 downto 0);
 begin
   scheduler_process: process (clk, op, F1, F2, F3)
   begin
@@ -40,38 +41,43 @@ begin
       mem_store <= '0';
       mem_en <= '0';
       reg_store <= '0';
+      mem_store_reg <= '0';
       reg_en <= '0';
       reg_load <= '0';
       alu_en <= '0';
-      if (op(3 downto 0) = "0000") then -- Load imm
+      if (op_latch(3 downto 0) = "0000") then -- Load imm
 	mem_en <= '1';
-	mem_loc <= F1;
-        imm(7 downto 4) <= F2;
-	imm(3 downto 0) <= F3;
+	mem_loc <= f1_latch;
+        imm(7 downto 4) <= f2_latch;
+	imm(3 downto 0) <= f3_latch;
         mem_store <= '1';
       end if;
-      if (op(3 downto 0) = "0001") then -- Store register from memory
+      if (op_latch(3 downto 0) = "0001") then -- Store register from memory
 	mem_en <= '1';
 	reg_en <= '1';
       	reg_store <= '1';
-	reg_d_loc <= F1;
-	mem_loc <= F2;
+	reg_d_loc <= f1_latch;
+	mem_loc <= f2_latch;
       end if;
-      if (op(3 downto 0) = "0010") then -- Store register from memory
+      if (op_latch(3 downto 0) = "0010") then -- Store memory from register
 	mem_en <= '1';
 	reg_en <= '1';
         mem_store_reg <= '1';
 	reg_load <= '1';
-	reg_d_loc <= F1;
-	mem_loc <= F2;
+	reg_d_loc <= f1_latch;
+	mem_loc <= f2_latch;
       end if;
-      if (op(3 downto 0) = "0011") then -- Add reg_s with reg_t and store in reg_d
+      if (op_latch(3 downto 0) = "0011") then -- Add reg_s with reg_t and store in reg_d
 	reg_en <= '1';
 	alu_en <= '1';
-	reg_d_loc <= F1;
-        reg_s_loc <= F2;
-        reg_t_loc <= F3;
+	reg_d_loc <= f1_latch;
+        reg_s_loc <= f2_latch;
+        reg_t_loc <= f3_latch;
       end if;
+      op_latch <= op;
+      f1_latch <= F1;
+      f2_latch <= F2;
+      f3_latch <= F3;
       -- TODO What is the difference in architecture for MEM and REG?
       -- TODO registers need to remember values over multiple clock cycle?
   

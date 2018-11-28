@@ -7,6 +7,22 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling architecture behaviour of pipelined_mult
 -- Loading entity latched_adder
 
+} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testbench
+-- Compiling architecture behaviour of testbench
+
+} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 2/async_dff.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 2/async_dff.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity async_dff
+-- Compiling architecture behaviour of async_dff
+
 } {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
@@ -19,13 +35,13 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling architecture latched_nand of latched_adder
 -- Loading entity latched_adder
 
-} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 2/async_dff.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 2/async_dff.vhd}
+} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 2/full_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 2/full_adder.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity async_dff
--- Compiling architecture behaviour of async_dff
+-- Compiling entity full_adder
+-- Compiling architecture behaviour of full_adder
 
 } {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 2/half_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 2/half_adder.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -34,13 +50,5 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_1164
 -- Compiling entity half_adder
 -- Compiling architecture behaviour of half_adder
-
-} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 2/full_adder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 2/full_adder.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity full_adder
--- Compiling architecture behaviour of full_adder
 
 } {} {}}

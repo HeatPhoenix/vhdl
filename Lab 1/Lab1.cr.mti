@@ -15,12 +15,6 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity alu
 -- Compiling architecture behaviour of alu
 
-} {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/scheduler.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Compiling entity scheduler
--- Compiling architecture behaviour of scheduler
-
 } {} {}} {D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/School/Master/SDwHDLS/vhdl/Lab 1/testbench.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD

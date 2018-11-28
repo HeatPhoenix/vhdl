@@ -21,9 +21,9 @@ V9NgVVQ`@6;:<0d39]F<Q43
 !s100 2GZdnTP5;j0OM[08<89@81
 Z6 OP;C;10.4a;61
 32
-Z7 !s110 1543227028
+Z7 !s110 1543228658
 !i10b 1
-Z8 !s108 1543227028.000000
+Z8 !s108 1543228658.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/async_dff.vhd|
 Z10 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/async_dff.vhd|
 !i113 1
@@ -99,11 +99,11 @@ V:`HB4HTajklF`A4MOk^ZF1
 !s100 g2HXf[NBf4<I>7aUDbe>22
 R6
 32
-R7
+Z21 !s110 1543228659
 !i10b 1
 R8
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/half_adder.vhd|
-Z22 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/half_adder.vhd|
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/half_adder.vhd|
+Z23 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/half_adder.vhd|
 !i113 1
 R11
 R12
@@ -117,112 +117,112 @@ VUBQXofWYQ6ZYV5]2YdjZJ3
 !s100 Q5OdcI?`mWoEHlbb0VgaC1
 R6
 32
-R7
+R21
 !i10b 1
 R8
-R21
 R22
+R23
 !i113 1
 R11
 R12
 Elatched_adder
-Z23 w1541767682
+Z24 w1541767682
 R1
 R2
 R3
-Z24 8D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd
-Z25 FD:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd
+Z25 8D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd
+Z26 FD:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd
 l0
 L4
 V:l][0H8;1jzD[`@m>BD@E3
 !s100 EC6=JN7:djOi>DWP79:Ck3
 R6
 32
-R7
+R21
 !i10b 1
-R8
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd|
-Z27 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd|
+Z27 !s108 1543228659.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd|
+Z29 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/latchedAdder.vhd|
 !i113 1
 R11
 R12
 Alatched_nand
 R1
 R2
-Z28 DEx4 work 13 latched_adder 0 22 :l][0H8;1jzD[`@m>BD@E3
+Z30 DEx4 work 13 latched_adder 0 22 :l][0H8;1jzD[`@m>BD@E3
 l47
 L39
 VPac^CX`mNmiAMNiKKhKV83
 !s100 INTAgHJMh:Hzj]PAWjPC43
 R6
 32
-R7
+R21
 !i10b 1
-R8
-R26
 R27
+R28
+R29
 !i113 1
 R11
 R12
 Alatched_and
 R1
 R2
-R28
+R30
 l31
 L23
 VnfTLjemco2<eHnlCPULJ52
 !s100 4`?HzYWmFIUSlZMIhoVNW1
 R6
 32
-R7
+R21
 !i10b 1
-R8
-R26
 R27
+R28
+R29
 !i113 1
 R11
 R12
 Abehaviour
 R1
 R2
-R28
+R30
 l17
 L9
 VS45oDb]_H=Xb0[S9eMC;_2
 !s100 [`G1YgM9QHQUTmL4maWhe3
 R6
 32
-R7
+R21
 !i10b 1
-R8
-R26
 R27
+R28
+R29
 !i113 1
 R11
 R12
 Epipelined_mult
-Z29 w1543226329
+Z31 w1543226329
 R1
 R2
 R3
-Z30 8D:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd
-Z31 FD:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd
+Z32 8D:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd
+Z33 FD:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd
 l0
 L4
 Vj;`RR=ZLbd;JjhLA@AfGZ3
 !s100 _ljdnDGjmVkoMTkdjg@jl3
 R6
 32
-R7
+R21
 !i10b 1
-R8
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd|
-Z33 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd|
+R27
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd|
+Z35 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/pipelinedMult.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R28
+R30
 R1
 R2
 DEx4 work 14 pipelined_mult 0 22 j;`RR=ZLbd;JjhLA@AfGZ3
@@ -232,50 +232,50 @@ VSWc]=S?h7^^e2JLfzY8?>1
 !s100 1Ck@=bEdLV=3CD3_C4G183
 R6
 32
-R7
+R21
 !i10b 1
-R8
-R32
-R33
+R27
+R34
+R35
 !i113 1
 R11
 R12
 Etestbench
-Z34 w1543226908
+Z36 w1543228655
 R1
 R2
 R3
-Z35 8D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd
-Z36 FD:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd
+Z37 8D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd
+Z38 FD:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd
 l0
 L4
 Ve=aO;Yi^=oXRE?_>279j52
 !s100 NaNUGQOUoO6LLI=3hH9@h2
 R6
 32
-R7
+R21
 !i10b 1
-R8
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd|
-Z38 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd|
+R27
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd|
+Z40 !s107 D:/School/Master/SDwHDLS/vhdl/Lab 2/testbench.vhd|
 !i113 1
 R11
 R12
 Abehaviour
 R1
 R2
-Z39 DEx4 work 9 testbench 0 22 e=aO;Yi^=oXRE?_>279j52
+Z41 DEx4 work 9 testbench 0 22 e=aO;Yi^=oXRE?_>279j52
 l16
 L7
-Z40 VDTk^B1`DgJFCW`1n7@]d?0
-Z41 !s100 L:TNiAoUEHCz1lzaSgMQn0
+VVVJdUzR]T0c:<C>N5W<in2
+!s100 o4VnPj=amGORlHE=zE`Mk1
 R6
 32
-R7
+R21
 !i10b 1
-R8
-R37
-R38
+R27
+R39
+R40
 !i113 1
 R11
 R12
